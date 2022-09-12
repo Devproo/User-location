@@ -6,11 +6,20 @@
 //
 
 import SwiftUI
+import MapKit
+
 
 struct ContentView: View {
+    @StateObject private var viewModel = ContentViewModel()
+   
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        Map(coordinateRegion: $viewModel.region, showsUserLocation: true)
+            .ignoresSafeArea()
+            .accentColor(Color(.systemPink))
+            .onAppear {
+                viewModel.checkIfLocationServiceIsEnabled()
+                
+            }
     }
 }
 
@@ -19,3 +28,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+

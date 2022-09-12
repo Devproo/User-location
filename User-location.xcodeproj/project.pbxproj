@@ -11,6 +11,7 @@
 		7F2CCCF028CF9C200042A9AB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2CCCEF28CF9C200042A9AB /* ContentView.swift */; };
 		7F2CCCF228CF9C240042A9AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F2CCCF128CF9C240042A9AB /* Assets.xcassets */; };
 		7F2CCCF528CF9C240042A9AB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F2CCCF428CF9C240042A9AB /* Preview Assets.xcassets */; };
+		7F2CCCFD28CFACFB0042A9AB /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2CCCFC28CFACFB0042A9AB /* ContentViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,8 @@
 		7F2CCCEF28CF9C200042A9AB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7F2CCCF128CF9C240042A9AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F2CCCF428CF9C240042A9AB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7F2CCCFB28CFA3AF0042A9AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		7F2CCCFC28CFACFB0042A9AB /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +54,10 @@
 		7F2CCCEC28CF9C200042A9AB /* User-location */ = {
 			isa = PBXGroup;
 			children = (
+				7F2CCCFB28CFA3AF0042A9AB /* Info.plist */,
 				7F2CCCED28CF9C200042A9AB /* User_locationApp.swift */,
 				7F2CCCEF28CF9C200042A9AB /* ContentView.swift */,
+				7F2CCCFC28CFACFB0042A9AB /* ContentViewModel.swift */,
 				7F2CCCF128CF9C240042A9AB /* Assets.xcassets */,
 				7F2CCCF328CF9C240042A9AB /* Preview Content */,
 			);
@@ -139,6 +144,7 @@
 			files = (
 				7F2CCCF028CF9C200042A9AB /* ContentView.swift in Sources */,
 				7F2CCCEE28CF9C200042A9AB /* User_locationApp.swift in Sources */,
+				7F2CCCFD28CFACFB0042A9AB /* ContentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +276,9 @@
 				DEVELOPMENT_TEAM = 2BWS35SAJK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "User-location/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "this app needs you location to show on map";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +308,9 @@
 				DEVELOPMENT_TEAM = 2BWS35SAJK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "User-location/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "this app needs you location to show on map";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
